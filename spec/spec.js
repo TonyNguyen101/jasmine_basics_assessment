@@ -35,7 +35,10 @@ describe('median number of an array', function(){
 
 describe('mode number of array', function (){
 	it('Returns the most common number', function(){
-		expect(grader.modeScore[50,50,50,50]).toEqual(50)
+		expect(grader.modeScore([90, 50, 70, 90])).toEqual(90)
+		expect(grader.modeScore([90, 50, 70])).toEqual(90)
+		expect(grader.modeScore([90, 70, 1])).toEqual(90)
+
 	});
 }); 
 
